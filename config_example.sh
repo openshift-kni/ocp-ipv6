@@ -3,8 +3,15 @@
 # A namespace where builds will be executed
 IPV6_NAMESPACE=ipv6
 
+# Image stream where the release will be published to
+IPv6_RELEASE_STREAM=release
+
 # A kubeconfig for api.ci.openshift.org
 IPV6_KUBECONFIG=ipv6-kubeconfig
+
+# Need access to wherever the payload image - and the
+# images referenced by the payload - are hosted
+IPV6_PULLSECRET=ipv6-pullsecret
 
 # Where to tag MCO builds
 MCO_STREAM=machine-config-operator
