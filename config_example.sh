@@ -4,7 +4,7 @@
 IPV6_NAMESPACE=ipv6
 
 # Image stream where the release will be published to
-IPv6_RELEASE_STREAM=release
+IPV6_RELEASE_STREAM=release
 
 # A kubeconfig for api.ci.openshift.org
 IPV6_KUBECONFIG=ipv6-kubeconfig
