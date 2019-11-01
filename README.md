@@ -14,6 +14,7 @@ cluster, and with the desired namespace set as the default:
 $ oc --config=ipv6-kubeconfig login https://api.ci.openshift.org --token=...
 $ oc --config=ipv6-kubeconfig project ipv6
 $ oc --config=ipv6-kubeconfig registry login --to=ipv6-pullsecret
+$ oc --config=ipv6-kubeconfig registry login -z default --to=ipv6-serviceaccount-pullsecret
 ```
 
 Note the namespace was initially created and configured as follows:
