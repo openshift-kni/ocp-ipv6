@@ -26,3 +26,10 @@ CNO_STREAM=cluster-network-operator
 # The git repository and ref (e.g. branch) to build cluster-network-operator from
 CNO_GIT_URI=https://github.com/markmc/cluster-network-operator.git
 CNO_GIT_REF=ipv6-hack
+
+# Where to tag ovnkube builds
+OVNKUBE_STREAM=ovn-kubernetes
+
+# The git repository and ref (e.g. branch) to build ovn-kubernetes from
+OVNKUBE_GIT_URI=https://github.com/markmc/ovn-kubernetes.git
+OVNKUBE_GIT_REF=ipv6-hack
