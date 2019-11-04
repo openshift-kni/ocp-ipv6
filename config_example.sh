@@ -36,3 +36,9 @@ HYPERKUBE_STREAM=hyperkube
 HYPERKUBE_GIT_URI=https://github.com/danwinship/origin.git
 HYPERKUBE_GIT_REF=ipv6
 HYPERKUBE_DOCKERFILE=images/hyperkube/Dockerfile.rhel
+
+# cluster-kube-apiserver-operator build config
+CKAO_STREAM=cluster-kube-apiserver-operator
+CKAO_GIT_URI=https://github.com/danwinship/cluster-kube-apiserver-operator.git
+CKAO_GIT_REF=ipv6-bind
+CKAO_DOCKERFILE=Dockerfile
