@@ -30,3 +30,9 @@ OVNKUBE_STREAM=ovn-kubernetes
 OVNKUBE_GIT_URI=https://github.com/markmc/ovn-kubernetes.git
 OVNKUBE_GIT_REF=ipv6-hack
 OVNKUBE_DOCKERFILE=Dockerfile
+
+# hyperkube build config
+HYPERKUBE_STREAM=hyperkube
+HYPERKUBE_GIT_URI=https://github.com/danwinship/origin.git
+HYPERKUBE_GIT_REF=ipv6
+HYPERKUBE_DOCKERFILE=images/hyperkube/Dockerfile.rhel
