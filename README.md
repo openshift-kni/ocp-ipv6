@@ -43,6 +43,13 @@ $ IPV6_CONFIG=config_example.sh ./build_ovnkube.sh 4.3.0.ipv6-2019-11-01-0001
 ovn-kubernetes built to sha256:6684f115f73328287a9cff6e71daa49329fb11580651e79ba6a8aa550ea97690
 ```
 
+To determine the next version number to use for a component build, take a look
+at the list of previous builds:
+
+```
+oc --config=ipv6-kubeconfig get builds
+```
+
 And to build a release image:
 
 ```
