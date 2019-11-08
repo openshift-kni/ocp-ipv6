@@ -43,6 +43,13 @@ $ IPV6_CONFIG=config_example.sh ./build_ovnkube.sh 4.3.0.ipv6-2019-11-01-0001
 ovn-kubernetes built to sha256:6684f115f73328287a9cff6e71daa49329fb11580651e79ba6a8aa550ea97690
 ```
 
+To determine the next version number to use for a component build, take a look
+at the list of previous builds:
+
+```
+oc --config=ipv6-kubeconfig get builds
+```
+
 And to build a release image:
 
 ```
@@ -53,6 +60,21 @@ $ IPV6_CONFIG=config_example.sh ./prep_release.sh 4.3.0-0.ci-2019-11-01-112322-i
     ovn-kubernetes=registry.svc.ci.openshift.org/ipv6/ovn-kubernetes@sha256:6684f115f73328287a9cff6e71daa49329fb11580651e79ba6a8aa550ea97690
 ...
 New 4.3.0-0.ci-2019-11-01-112322-ipv6.1 release payload available to registry.svc.ci.openshift.org/ipv6/release:4.3.0-0.ci-2019-11-01-112322-ipv6.1
+```
+
+You may want to get a list of the custom images included in a previous build to
+use as a starting point for your new build.  You can do something like this:
+
+```
+$ oc adm release info -a ipv6-pullsecret --pullspecs registry.svc.ci.openshift.org/ipv6/release:4.3.0-0.ci-2019-11-04-092120-ipv6.3 | grep ipv6
+Name:          4.3.0-0.ci-2019-11-04-092120-ipv6.3
+Pull From: registry.svc.ci.openshift.org/ipv6/release@sha256:0a110712b6111e8e15c739ecbfa516ef1967298489ce640827709c71ee5f6226
+  Version:  4.3.0-0.ci-2019-11-04-092120-ipv6.3
+  cluster-kube-apiserver-operator                 registry.svc.ci.openshift.org/ipv6/cluster-kube-apiserver-operator@sha256:6eb1f6ce2bcebfb65c00cf1aaa279c4f5ee9425d60c971d85a150d036e2535ac
+  cluster-network-operator                        registry.svc.ci.openshift.org/ipv6/cluster-network-operator@sha256:895ad64dd3b547d6997d8827a1472d734a5cd95c6a842fb3575c6f4d1eb03046
+  hyperkube                                       registry.svc.ci.openshift.org/ipv6/hyperkube@sha256:f82d9ada769946ccf21e59307c2c107951893d16d684eb2c2edb032bcc685a36
+  machine-config-operator                         registry.svc.ci.openshift.org/ipv6/machine-config-operator@sha256:37021127dc9c1261401e67f573d53f5c444c9efebbdeb42875569dd9cc04c674
+  ovn-kubernetes                                  registry.svc.ci.openshift.org/ipv6/ovn-kubernetes@sha256:75c3fa51a452ba703f409301cc4eb7092f5586be33caec5cb9a844d7d1a3488c
 ```
 
 ## Accessing
