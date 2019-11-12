@@ -47,3 +47,6 @@ CVO_STREAM=cluster-version-operator
 CVO_GIT_URI=https://github.com/russellb/cluster-version-operator.git
 CVO_GIT_REF=ipv6-hack
 CVO_DOCKERFILE=Dockerfile
+
+# machine-os-content build config
+MOC_STREAM=machine-os-content
