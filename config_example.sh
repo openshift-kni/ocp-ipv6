@@ -17,6 +17,12 @@ IPV6_PULLSECRET=ipv6-pullsecret
 
 ## Specific modules
 
+# cluster-dns-operator build config
+DNS_STREAM=cluster-dns-operator
+DNS_GIT_URI=https://github.com/danwinship/cluster-dns-operator.git
+DNS_GIT_REF=ipv6-aws
+DNS_DOCKERFILE=Dockerfile
+
 # cluster-kube-apiserver-operator build config
 CKAO_STREAM=cluster-kube-apiserver-operator
 CKAO_GIT_URI=https://github.com/danwinship/cluster-kube-apiserver-operator.git
