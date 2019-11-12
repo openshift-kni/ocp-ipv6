@@ -42,3 +42,8 @@ CKAO_STREAM=cluster-kube-apiserver-operator
 CKAO_GIT_URI=https://github.com/danwinship/cluster-kube-apiserver-operator.git
 CKAO_GIT_REF=ipv6-bind
 CKAO_DOCKERFILE=Dockerfile
+
+CVO_STREAM=cluster-version-operator
+CVO_GIT_URI=https://github.com/russellb/cluster-version-operator.git
+CVO_GIT_REF=ipv6-hack
+CVO_DOCKERFILE=Dockerfile
