@@ -77,6 +77,16 @@ Pull From: registry.svc.ci.openshift.org/ipv6/release@sha256:0a110712b6111e8e15c
   ovn-kubernetes                                  registry.svc.ci.openshift.org/ipv6/ovn-kubernetes@sha256:75c3fa51a452ba703f409301cc4eb7092f5586be33caec5cb9a844d7d1a3488c
 ```
 
+## Building from builds.yaml
+
+Instead of the rather manual process for collecting all of the input
+for a build, you can alternatively add a new entry to `builds.yaml`
+with the same information and do:
+
+```
+$ ./build_release.sh 4.3.0-0.ci-2019-11-16-004402-ipv6.1
+```
+
 ## Accessing
 
 ```
