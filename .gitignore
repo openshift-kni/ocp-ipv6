@@ -2,5 +2,3 @@
 ipv6-kubeconfig
 ipv6-pullsecret
 ipv6-serviceaccount-pullsecret
-config_*.sh
-!config_example.sh

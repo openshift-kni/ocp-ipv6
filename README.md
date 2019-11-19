@@ -32,13 +32,13 @@ $ oc --config=ipv6-kubeconfig create imagestream cluster-network-operator
 To build component images:
 
 ```
-$ IPV6_CONFIG=config_example.sh ./build_mco.sh 4.3.0.ipv6-2019-11-01-0001
+$ IPV6_CONFIG=config.sh ./build_mco.sh 4.3.0.ipv6-2019-11-01-0001
 ...
 machine-config-operator built to sha256:37021127dc9c1261401e67f573d53f5c444c9efebbdeb42875569dd9cc04c674
-$ IPV6_CONFIG=config_example.sh ./build_cno.sh 4.3.0.ipv6-2019-11-01-0001
+$ IPV6_CONFIG=config.sh ./build_cno.sh 4.3.0.ipv6-2019-11-01-0001
 ...
 cluster-network-operator built to sha256:40eb00fa6cbe7767ad9c047fbdfab149e7916e18a761854e65ee9af8f057e604
-$ IPV6_CONFIG=config_example.sh ./build_ovnkube.sh 4.3.0.ipv6-2019-11-01-0001
+$ IPV6_CONFIG=config.sh ./build_ovnkube.sh 4.3.0.ipv6-2019-11-01-0001
 ...
 ovn-kubernetes built to sha256:6684f115f73328287a9cff6e71daa49329fb11580651e79ba6a8aa550ea97690
 ```
@@ -53,7 +53,7 @@ oc --config=ipv6-kubeconfig get builds
 And to build a release image:
 
 ```
-$ IPV6_CONFIG=config_example.sh ./prep_release.sh 4.3.0-0.ci-2019-11-01-112322-ipv6.1 \
+$ IPV6_CONFIG=config.sh ./prep_release.sh 4.3.0-0.ci-2019-11-01-112322-ipv6.1 \
     registry.svc.ci.openshift.org/ocp/release:4.3.0-0.ci-2019-11-01-112322 \
     machine-config-operator=registry.svc.ci.openshift.org/ipv6/machine-config-operator@sha256:37021127dc9c1261401e67f573d53f5c444c9efebbdeb42875569dd9cc04c674 \
     cluster-network-operator=registry.svc.ci.openshift.org/ipv6/cluster-network-operator@sha256:40eb00fa6cbe7767ad9c047fbdfab149e7916e18a761854e65ee9af8f057e604 \

@@ -4,25 +4,9 @@ set -xe
 #
 # Prepare a new release payload based on a supplied payload pullspec
 #
-# See config_example.sh for required configuration steps
+# See config.sh for required configuration steps
 #
-
-SCRIPTDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-USER=`whoami`
-
-# Get variables from the config file
-if [ -z "${IPV6_CONFIG:-}" ]; then
-    # See if there's a ipv6_config_$USER.sh in the SCRIPTDIR
-    if [ -f "${SCRIPTDIR}/config_${USER}.sh" ]; then
-        echo "Using IPV6_CONFIG ${SCRIPTDIR}/config_${USER}.sh"
-        IPV6_CONFIG="${SCRIPTDIR}/config_${USER}.sh"
-    else
-        echo "Please run with a configuration environment set." >&2
-        echo "eg IPV6_CONFIG=config_example.sh $0" >&2
-        exit 1
-    fi
-fi
-source $IPV6_CONFIG
+source common.sh
 
 RELEASE_NAME="$1"; shift || true
 RELEASE_PULLSPEC="$1"; shift || true
