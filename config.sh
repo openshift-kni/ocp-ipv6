@@ -53,6 +53,12 @@ HYPERKUBE_GIT_URI=https://github.com/danwinship/origin.git
 HYPERKUBE_GIT_REF=ipv6
 HYPERKUBE_DOCKERFILE=images/hyperkube/Dockerfile.rhel
 
+# machine-api-operator build config
+MAO_STREAM=machine-api-operator
+MAO_GIT_URI=https://github.com/openshift-kni/machine-api-operator.git
+MAO_GIT_REF=4.3-ipv6
+MAO_DOCKERFILE=Dockerfile
+
 # machine-config-operator build config
 MCO_STREAM=machine-config-operator
 MCO_GIT_URI=https://github.com/russellb/machine-config-operator.git
