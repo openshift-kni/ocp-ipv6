@@ -23,6 +23,12 @@ DNS_GIT_URI=https://github.com/danwinship/cluster-dns-operator.git
 DNS_GIT_REF=ipv6-aws
 DNS_DOCKERFILE=Dockerfile
 
+# cluster-authentication-operator build config
+CAO_STREAM=cluster-authentication-operator
+CAO_GIT_URI=https://github.com/openshift-kni/cluster-authentication-operator.git
+CAO_GIT_REF=4.3-ipv6
+CAO_DOCKERFILE=Dockerfile
+
 # cluster-kube-apiserver-operator build config
 CKAO_STREAM=cluster-kube-apiserver-operator
 CKAO_GIT_URI=https://github.com/danwinship/cluster-kube-apiserver-operator.git
