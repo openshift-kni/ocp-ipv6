@@ -29,6 +29,12 @@ CKAO_GIT_URI=https://github.com/danwinship/cluster-kube-apiserver-operator.git
 CKAO_GIT_REF=ipv6-bind
 CKAO_DOCKERFILE=Dockerfile
 
+# cluster-kube-controller-manager-operator build config
+CKCMO_STREAM=cluster-kube-controller-manager-operator
+CKCMO_GIT_URI=https://github.com/openshift-kni/cluster-kube-controller-manager-operator.git
+CKCMO_GIT_REF=4.3-ipv6
+CKCMO_DOCKERFILE=Dockerfile
+
 # cluster-openshift-apiserver-operator build config
 COAO_STREAM=cluster-openshift-apiserver-operator
 COAO_GIT_URI=https://github.com/openshift-kni/cluster-openshift-apiserver-operator.git
