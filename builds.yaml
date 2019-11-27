@@ -1,3 +1,26 @@
+- name: 4.3.0-0.nightly-2019-11-26-114052-ipv6.1
+  ocp_release: 4.3.0-0.nightly-2019-11-26-114052
+  description: |
+    Switch from 4.3.0-0.ci to 4.3.0-0.nightly
+  images:
+  - name: cluster-kube-apiserver-operator
+    image: registry.svc.ci.openshift.org/ipv6/cluster-kube-apiserver-operator@sha256:53752176461b03ae7db5aa4c6c54987946cc385fd96bd9f8587f01889b5376f3
+  - name: cluster-network-operator
+    image: registry.svc.ci.openshift.org/ipv6/cluster-network-operator@sha256:65385297e2df3ec1b688e5891a90ca2e8cfe77f881e5a70250c1b6efa36a0c8f
+  - name: machine-config-operator
+    image: registry.svc.ci.openshift.org/ipv6/machine-config-operator@sha256:63bd25a99c67d5448521ed0100fcc3699f8aebd65dd6d88d4267b7f1a30d3da3
+  - name: ovn-kubernetes
+    image: registry.svc.ci.openshift.org/ipv6/ovn-kubernetes@sha256:ec89ca67b67e3d60feda7bf7138c89006926427705e2cd75f25ca8fc03bfe3b2
+  - name: hyperkube
+    image: registry.svc.ci.openshift.org/ipv6/hyperkube@sha256:2ab6ceaf710ae4fdf2b1744f47827dfa26b9af2c987169ff879278f423fbd5b4
+  - name: machine-os-content
+    image: registry.svc.ci.openshift.org/ipv6/machine-os-content@sha256:ab2a36a7c3af767e0cab2a0618a26140f77d2ad635e0d1e24316c6d68aec3bd6
+  - name: cluster-dns-operator
+    image: registry.svc.ci.openshift.org/ipv6/cluster-dns-operator@sha256:9a4e0a3f120859054a08767672e8d8e058ae1563b8ac9dd04bd1610be03bb5c4
+  - name: cluster-openshift-apiserver-operator
+    image: registry.svc.ci.openshift.org/ipv6/cluster-openshift-apiserver-operator@sha256:b72652a1691b1a5e896734e761abfc71746b9fa62ad40908c0d16bf34d59c00f
+  - name: machine-api-operator
+    image: registry.svc.ci.openshift.org/ipv6/machine-api-operator@sha256:dabb5b22c510111b65e6792f180881a848bbac077f54acacd015647e68d662e8
 - name: 4.3.0-0.ci-2019-11-22-122829-ipv6.6
   ocp_release: 4.3.0-0.ci-2019-11-22-122829
   description: |

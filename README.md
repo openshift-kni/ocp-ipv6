@@ -17,6 +17,12 @@ $ oc --config=ipv6-kubeconfig registry login --to=ipv6-pullsecret
 $ oc --config=ipv6-kubeconfig registry login -z default --to=ipv6-serviceaccount-pullsecret
 ```
 
+Also, you need you quay.io pull secret:
+
+```
+$ TOKEN=$(yq -r .pullSecret install-config.yaml | jq -r '.auths["quay.io"].auth' | base64 -d)
+$ podman login --authfile=ipv6-pullsecret -u ${TOKEN%:*} -p ${TOKEN#*:} quay.io
+
 Note the namespace was initially created and configured as follows:
 
 ```
