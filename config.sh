@@ -19,8 +19,8 @@ IPV6_PULLSECRET=ipv6-pullsecret
 
 # cluster-dns-operator build config
 DNS_STREAM=cluster-dns-operator
-DNS_GIT_URI=https://github.com/danwinship/cluster-dns-operator.git
-DNS_GIT_REF=ipv6-aws
+DNS_GIT_URI=https://github.com/openshift-kni/cluster-dns-operator.git
+DNS_GIT_REF=4.3-ipv6
 DNS_DOCKERFILE=Dockerfile
 
 # cluster-authentication-operator build config
