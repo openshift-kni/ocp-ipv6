@@ -53,12 +53,6 @@ CNO_GIT_URI=https://github.com/openshift-kni/cluster-network-operator.git
 CNO_GIT_REF=4.3-ipv6
 CNO_DOCKERFILE=Dockerfile
 
-# cluster-version-operator build config
-CVO_STREAM=cluster-version-operator
-CVO_GIT_URI=https://github.com/russellb/cluster-version-operator.git
-CVO_GIT_REF=ipv6-hack
-CVO_DOCKERFILE=Dockerfile
-
 # hyperkube build config
 HYPERKUBE_STREAM=hyperkube
 HYPERKUBE_GIT_URI=https://github.com/danwinship/origin.git
