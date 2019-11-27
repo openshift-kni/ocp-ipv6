@@ -76,6 +76,6 @@ MOC_STREAM=machine-os-content
 
 # ovn-kubernetes build config
 OVNKUBE_STREAM=ovn-kubernetes
-OVNKUBE_GIT_URI=https://github.com/markmc/ovn-kubernetes.git
-OVNKUBE_GIT_REF=ipv6-hack
+OVNKUBE_GIT_URI=https://github.com/openshift-kni/ovn-kubernetes.git
+OVNKUBE_GIT_REF=4.3-ipv6
 OVNKUBE_DOCKERFILE=Dockerfile
