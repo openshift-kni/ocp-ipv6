@@ -67,8 +67,8 @@ MAO_DOCKERFILE=Dockerfile
 
 # machine-config-operator build config
 MCO_STREAM=machine-config-operator
-MCO_GIT_URI=https://github.com/russellb/machine-config-operator.git
-MCO_GIT_REF=ipv6
+MCO_GIT_URI=https://github.com/openshift-kni/machine-config-operator.git
+MCO_GIT_REF=4.3-ipv6
 MCO_DOCKERFILE=Dockerfile
 
 # machine-os-content build config
