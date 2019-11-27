@@ -33,7 +33,7 @@ CAO_DOCKERFILE=Dockerfile
 CKAO_STREAM=cluster-kube-apiserver-operator
 CKAO_GIT_URI=https://github.com/openshift-kni/cluster-kube-apiserver-operator.git
 CKAO_GIT_REF=4.3-ipv6
-CKAO_DOCKERFILE=Dockerfile
+CKAO_DOCKERFILE=Dockerfile.rhel7
 
 # cluster-kube-controller-manager-operator build config
 CKCMO_STREAM=cluster-kube-controller-manager-operator
