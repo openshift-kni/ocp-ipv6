@@ -15,7 +15,11 @@ fi
 
 check_prereqs $MOC_STREAM || exit 1
 
-MOC_PULLSPEC=$(oc adm release extract --file=image-references ${BASE_RELEASE_PULLSPEC} | jq -r '.spec.tags | .[] | select(.name=="machine-os-content") | .from.name')
+MOC_PULLSPEC=$(oc adm release extract --registry-config "${IPV6_PULLSECRET}" --file=image-references "${BASE_RELEASE_PULLSPEC}" | jq -r '.spec.tags | .[] | select(.name=="machine-os-content") | .from.name')
+if [ -z "${MOC_PULLSPEC}" ]; then
+    echo "Failed to find machine-os-content pull spec from ${BASE_RELEASE_PULLSPEC}" >&2
+    exit 1
+fi
 
 DOCKERFILE=$(cat <<EOF
 FROM ${MOC_PULLSPEC} AS moc

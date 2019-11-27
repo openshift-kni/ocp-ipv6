@@ -17,11 +17,13 @@ $ oc --config=ipv6-kubeconfig registry login --to=ipv6-pullsecret
 $ oc --config=ipv6-kubeconfig registry login -z default --to=ipv6-serviceaccount-pullsecret
 ```
 
-Also, you need you quay.io pull secret:
+Also, you need your quay.io pull secret to access
+openshift-release-dev content:
 
 ```
 $ TOKEN=$(yq -r .pullSecret install-config.yaml | jq -r '.auths["quay.io"].auth' | base64 -d)
 $ podman login --authfile=ipv6-pullsecret -u ${TOKEN%:*} -p ${TOKEN#*:} quay.io
+```
 
 Note the namespace was initially created and configured as follows:
 
@@ -32,6 +34,20 @@ $ oc --config=ipv6-kubeconfig create imagestream release
 $ oc --config=ipv6-kubeconfig create imagestream machine-config-operator
 $ oc --config=ipv6-kubeconfig create imagestream cluster-network-operator
 ````
+
+Since build jobs - in particular the machine-os-content build - also
+needs access to this content so, we create a ```docker-registry```
+secret so the image stream can import referenced images:
+
+```
+$ oc --config=ipv6-kubeconfig \
+    create secret docker-registry quay-pullsecret \
+    --docker-server=quay.io \
+    --docker-username=${TOKEN%:*} \
+    --docker-password=${TOKEN#*:}
+$ oc --config ipv6-kubeconfig secret link default quay-pullsecret --for=pull
+$ oc --config ipv6-kubeconfig secret link builder quay-pullsecret
+```
 
 ## Building
 
