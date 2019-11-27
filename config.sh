@@ -49,8 +49,8 @@ COAO_DOCKERFILE=Dockerfile
 
 # cluster-network-operator build config
 CNO_STREAM=cluster-network-operator
-CNO_GIT_URI=https://github.com/markmc/cluster-network-operator.git
-CNO_GIT_REF=ipv6-hack
+CNO_GIT_URI=https://github.com/openshift-kni/cluster-network-operator.git
+CNO_GIT_REF=4.3-ipv6
 CNO_DOCKERFILE=Dockerfile
 
 # cluster-version-operator build config
