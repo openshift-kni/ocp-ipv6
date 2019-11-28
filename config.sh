@@ -41,6 +41,12 @@ CKCMO_GIT_URI=https://github.com/openshift-kni/cluster-kube-controller-manager-o
 CKCMO_GIT_REF=4.3-ipv6
 CKCMO_DOCKERFILE=Dockerfile.rhel7
 
+# cluster-monitoring-operator build config
+CMO_STREAM=cluster-monitoring-operator
+CMO_GIT_URI=https://github.com/openshift-kni/cluster-monitoring-operator.git
+CMO_GIT_REF=4.3-ipv6
+CMO_DOCKERFILE=Dockerfile
+
 # cluster-openshift-apiserver-operator build config
 COAO_STREAM=cluster-openshift-apiserver-operator
 COAO_GIT_URI=https://github.com/openshift-kni/cluster-openshift-apiserver-operator.git
