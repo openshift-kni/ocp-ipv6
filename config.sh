@@ -59,6 +59,12 @@ HYPERKUBE_GIT_URI=https://github.com/openshift-kni/origin.git
 HYPERKUBE_GIT_REF=4.3-ipv6
 HYPERKUBE_DOCKERFILE=images/hyperkube/Dockerfile.rhel
 
+# installer build_config
+INSTALLER_STREAM=installer
+INSTALLER_GIT_URI=https://github.com/openshift-kni/installer.git
+INSTALLER_GIT_REF=4.3-ipv6
+INSTALLER_DOCKERFILE=images/installer/Dockerfile.ci
+
 # machine-api-operator build config
 MAO_STREAM=machine-api-operator
 MAO_GIT_URI=https://github.com/openshift-kni/machine-api-operator.git
