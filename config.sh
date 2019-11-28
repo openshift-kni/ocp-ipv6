@@ -59,6 +59,12 @@ CNO_GIT_URI=https://github.com/openshift-kni/cluster-network-operator.git
 CNO_GIT_REF=4.3-ipv6
 CNO_DOCKERFILE=Dockerfile
 
+# console-operator build config
+CONSOLE_OPERATOR_STREAM=console-operator
+CONSOLE_OPERATOR_GIT_URI=https://github.com/openshift-kni/console-operator.git
+CONSOLE_OPERATOR_GIT_REF=4.3-ipv6
+CONSOLE_OPERATOR_DOCKERFILE=Dockerfile
+
 # hyperkube build config
 HYPERKUBE_STREAM=hyperkube
 HYPERKUBE_GIT_URI=https://github.com/openshift-kni/origin.git
