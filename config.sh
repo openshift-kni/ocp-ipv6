@@ -30,7 +30,7 @@ CAO_GIT_REF=4.3-ipv6
 CAO_DOCKERFILE=Dockerfile
 
 # cluster-image-registry-operator
-CIRO_STREAM=cluster-authentication-operator
+CIRO_STREAM=cluster-image-registry-operator
 CIRO_GIT_URI=https://github.com/openshift-kni/cluster-image-registry-operator.git
 CIRO_GIT_REF=4.3-ipv6
 CIRO_DOCKERFILE=Dockerfile
