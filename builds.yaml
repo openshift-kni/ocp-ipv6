@@ -1,3 +1,32 @@
+- name: 4.3.0-0.nightly-2019-12-04-124503-ipv6.2
+  ocp_release: 4.3.0-0.nightly-2019-12-04-124503
+  description: |
+    Add ovn-kube hack to allow IPv4 for pods that need AWS API access, drop dns and machine-api operator images no longer needed
+  images:
+  - name: cluster-authentication-operator
+    image: registry.svc.ci.openshift.org/ipv6/cluster-authentication-operator@sha256:704bca49dba96612a03effcfbfa0fe7d4f0f007c932070570734a262579596dd
+  - name: cluster-kube-apiserver-operator
+    image: registry.svc.ci.openshift.org/ipv6/cluster-kube-apiserver-operator@sha256:ab7d1632ccb2ec47267653c2f434e7dbf2ea38c7a3fad5a26c02720d2024454e
+  - name: cluster-kube-controller-manager-operator
+    image: registry.svc.ci.openshift.org/ipv6/cluster-kube-controller-manager-operator@sha256:70085ee58142d2a976a3129a43e1821f9b41043f4badc44dae425334ff62db16
+  - name: cluster-network-operator
+    image: registry.svc.ci.openshift.org/ipv6/cluster-network-operator@sha256:8be27c40d2912e785cb6abafe534783455a5b223ec6d70cc07936b3c41d62ac4
+  - name: cluster-monitoring-operator
+    image: registry.svc.ci.openshift.org/ipv6/cluster-monitoring-operator@sha256:3cd1407465fcd53c1606431690c9b688b7e8de440bb2e78de35013463a579ab0
+  - name: cluster-openshift-apiserver-operator
+    image: registry.svc.ci.openshift.org/ipv6/cluster-openshift-apiserver-operator@sha256:b72652a1691b1a5e896734e761abfc71746b9fa62ad40908c0d16bf34d59c00f
+  - name: console-operator
+    image: registry.svc.ci.openshift.org/ipv6/console-operator@sha256:0eb79439b6185830cd6f61e7cf9705663ca3977125b43f18183dd620fe2c4424
+  - name: hyperkube
+    image: registry.svc.ci.openshift.org/ipv6/hyperkube@sha256:0b818b622df700e16143989ad5dde30dcaacfd689cccee131c8fc3ea7db318fd
+  - name: installer
+    image: registry.svc.ci.openshift.org/ipv6/installer@sha256:ada2afbf67693b71dfa35b05b5d84d2294880514829b49f5e057a2144a592997
+  - name: machine-config-operator
+    image: registry.svc.ci.openshift.org/ipv6/machine-config-operator@sha256:197e17813c7403e63762c9105884e0f4cd8a558a35a11ebdf95f0084d782ce53
+  - name: machine-os-content
+    image: registry.svc.ci.openshift.org/ipv6/machine-os-content@sha256:d513ac541d70d5b51582bbe4a22419c428a66ed744c1392f952f0e3da6cdb1b2
+  - name: ovn-kubernetes
+    image: registry.svc.ci.openshift.org/ipv6/ovn-kubernetes@sha256:e3e49506cd1c8d99f1350cc7537b28ea6a2aa4f906af883b79e6cacebb16a42e
 - name: 4.3.0-0.nightly-2019-12-04-124503-ipv6.1
   ocp_release: 4.3.0-0.nightly-2019-12-04-124503
   description: |
