@@ -86,6 +86,12 @@ MCO_DOCKERFILE=Dockerfile
 # machine-os-content build config
 MOC_STREAM=machine-os-content
 
+# openshift-controller-manager build config
+OCM_STREAM=openshift-controller-manager
+OCM_GIT_URI=https://github.com/openshift-kni/openshift-controller-manager.git
+OCM_GIT_REF=4.3-ipv6
+OCM_DOCKERFILE=Dockerfile.rhel
+
 # ovn-kubernetes build config
 OVNKUBE_STREAM=ovn-kubernetes
 OVNKUBE_GIT_URI=https://github.com/openshift-kni/ovn-kubernetes.git
