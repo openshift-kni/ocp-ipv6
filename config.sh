@@ -121,3 +121,9 @@ AMC_STREAM=aws-machine-controllers
 AMC_GIT_URI=https://github.com/openshift-kni/cluster-api-provider-aws
 AMC_GIT_REF=4.3-ipv6
 AMC_DOCKERFILE=Dockerfile
+
+#cluster-machine-approver
+CMA_STREAM=cluster-machine-approver
+CMA_GIT_URI=https://github.com/openshift-kni/cluster-machine-approver.git
+CMA_GIT_REF=4.3-ipv6
+CMA_DOCKERFILE=Dockerfile
