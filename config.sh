@@ -115,3 +115,9 @@ OVNKUBE_STREAM=ovn-kubernetes
 OVNKUBE_GIT_URI=https://github.com/openshift-kni/ovn-kubernetes.git
 OVNKUBE_GIT_REF=4.3-ipv6
 OVNKUBE_DOCKERFILE=Dockerfile
+
+#aws-machine-controllers build config
+AMC_STREAM=aws-machine-controllers
+AMC_GIT_URI=https://github.com/openshift-kni/cluster-api-provider-aws
+AMC_GIT_REF=4.3-ipv6
+AMC_DOCKERFILE=Dockerfile
