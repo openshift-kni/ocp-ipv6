@@ -21,7 +21,7 @@ Also, you need your quay.io pull secret to access
 openshift-release-dev content:
 
 ```
-$ TOKEN=$(yq -r .pullSecret install-config.yaml | jq -r '.auths["quay.io"].auth' | base64 -d)
+$ TOKEN=$(jq -r .pullSecret install-config.yaml | jq -r '.auths["quay.io"].auth' | base64 -d)
 $ podman login --authfile=ipv6-pullsecret -u ${TOKEN%:*} -p ${TOKEN#*:} quay.io
 ```
 
