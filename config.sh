@@ -122,8 +122,14 @@ AMC_GIT_URI=https://github.com/openshift-kni/cluster-api-provider-aws
 AMC_GIT_REF=4.3-ipv6
 AMC_DOCKERFILE=Dockerfile
 
-#cluster-machine-approver
+#cluster-machine-approver build config
 CMA_STREAM=cluster-machine-approver
 CMA_GIT_URI=https://github.com/openshift-kni/cluster-machine-approver.git
 CMA_GIT_REF=4.3-ipv6
 CMA_DOCKERFILE=Dockerfile
+
+# cluster-dns-operator build config
+CDO_STREAM=cluster-dns-operator
+CDO_GIT_URI=https://github.com/openshift-kni/cluster-dns-operator.git
+CDO_GIT_REF=4.3-ipv6
+CDO_DOCKERFILE=Dockerfile
