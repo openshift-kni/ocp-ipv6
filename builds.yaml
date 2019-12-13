@@ -36,7 +36,7 @@
   - name: cluster-dns-operator
     image: registry.svc.ci.openshift.org/ipv6/cluster-dns-operator@sha256:3d3a6c049da15f5ca176395b4329f81c355483f3b792ee7bd035ecbabf138e94
   - name: cluster-machine-approver
-    image: registry.svc.ci.openshift.org/ipv6/cluster-machine-approver@sha256:9f8ef695c647b5fc60eedf24569cc3062c812fa383a67331ecf440852a0f142f
+    image: registry.svc.ci.openshift.org/ipv6/cluster-machine-approver@sha256:778cf6b14ddc947aae3d52ed7f319e63618f5db1ce815e49916448ba413a372b
   - name: aws-machine-controllers
     image: registry.svc.ci.openshift.org/ipv6/aws-machine-controllers@sha256:f78b725e3f83bd3e947bbb1e179976736135d6fb5fadd5e7c30d50d6c7f83024
 - name: 4.3.0-0.nightly-2019-12-11-111249-ipv6.3
