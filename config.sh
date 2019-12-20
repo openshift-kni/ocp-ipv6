@@ -89,6 +89,12 @@ INSTALLER_ARTIFACTS_GIT_URI=https://github.com/openshift-kni/installer.git
 INSTALLER_ARTIFACTS_GIT_REF=4.3-ipv6
 INSTALLER_ARTIFACTS_DOCKERFILE=images/installer-artifacts/Dockerfile.rhel
 
+# installer-baremetal build_config
+INSTALLER_BAREMETAL_STREAM=installer-baremetal
+INSTALLER_BAREMETAL_GIT_URI=https://github.com/openshift-kni/installer.git
+INSTALLER_BAREMETAL_GIT_REF=4.3-ipv6
+INSTALLER_BAREMETAL_DOCKERFILE=images/baremetal/Dockerfile.ci
+
 # machine-config-operator build config
 MCO_STREAM=machine-config-operator
 MCO_GIT_URI=https://github.com/openshift-kni/machine-config-operator.git
