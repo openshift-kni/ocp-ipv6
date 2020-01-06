@@ -1,3 +1,45 @@
+- name: 4.3.0-0.nightly-2020-01-06-101556-ipv6.1
+  ocp_release: 4.3.0-0.nightly-2020-01-06-101556
+  description: |
+    update mco with rebase
+    Actually rebase installer to the 4.3 branch instead of picking up master patches
+    rebase and update installer to include PR#2846 - baremetal: rename rhcos-downloader to machine-os-downloader
+  images:
+  - name: cluster-authentication-operator
+    image: registry.svc.ci.openshift.org/ipv6/cluster-authentication-operator@sha256:b5741821f30d6e1381365159e37b305dc62bf40d22e6ef6808e8ca7fe38546de
+  - name: cluster-kube-apiserver-operator
+    image: registry.svc.ci.openshift.org/ipv6/cluster-kube-apiserver-operator@sha256:6e8a990429f755557ac3b7d44cff27703780c27436138fa30a927d94a4d6999e
+  - name: cluster-network-operator
+    image: registry.svc.ci.openshift.org/ipv6/cluster-network-operator@sha256:6135b953d6e0801fd2de902300d04ae63b5a3e7f95287311d979d42c73aa0b71
+  - name: cluster-monitoring-operator
+    image: registry.svc.ci.openshift.org/ipv6/cluster-monitoring-operator@sha256:0b28e708f081e799d080c39bff948c400c34c19b2607108d3fa9983c49a84eea
+  - name: cluster-openshift-apiserver-operator
+    image: registry.svc.ci.openshift.org/ipv6/cluster-openshift-apiserver-operator@sha256:2b16dcac04562ea67db1dcb4d66e26b96a80d63a06aea0c45e98d367216f7374
+  - name: console-operator
+    image: registry.svc.ci.openshift.org/ipv6/console-operator@sha256:d44d1124a8bebb676ddd333553a5e0be776938024516e4dadab4b76992509d41
+  - name: haproxy-router
+    image: registry.svc.ci.openshift.org/ipv6/haproxy-router@sha256:1bbeff9150ffecea1d0bb52afd05629c851dc787dc248da13a1db135f5f205ac
+  - name: hyperkube
+    image: registry.svc.ci.openshift.org/ipv6/hyperkube@sha256:6a6ffa8a2197d25618f143959f89e630b5480c40a801891e3d98921de6f5faf6
+  - name: installer
+    image: registry.svc.ci.openshift.org/ipv6/installer@sha256:66583b1fea34822e83189489e06e6c000eae795d578572685f5c0a65df614d02
+  - name: installer-artifacts
+    image: registry.svc.ci.openshift.org/ipv6/installer-artifacts@sha256:ef12d32399358a67e599132017f7e5bcb0924ba6c977c7f47324dce5c0a37894
+  - name: installer-baremetal
+    image: registry.svc.ci.openshift.org/ipv6/installer-baremetal@sha256:417763d36d3becf3a088e116ae3ad89cb4eefb81fb3471c895a3f56e1d4cce15
+  - name: machine-config-operator
+    image: registry.svc.ci.openshift.org/ipv6/machine-config-operator@sha256:7f99ab70f29840dcbd08031df5cb0309668eb3326d2c27da00fa01ba350f107c
+  - name: machine-os-content
+    image: registry.svc.ci.openshift.org/ipv6/machine-os-content@sha256:d513ac541d70d5b51582bbe4a22419c428a66ed744c1392f952f0e3da6cdb1b2
+  - name: openshift-controller-manager
+    image: registry.svc.ci.openshift.org/ipv6/openshift-controller-manager@sha256:adeed640012d1c0cca0bfbc1fb26beee21f3d0c09552a5c438e00148805a7d9e
+  - name: ovn-kubernetes
+    image: registry.svc.ci.openshift.org/ipv6/ovn-kubernetes@sha256:dc62d3fe7057b2fc8f7ea983ce309f47eb9007803bd42467cad7f1c3ee30679d
+  - name: cluster-dns-operator
+    image: registry.svc.ci.openshift.org/ipv6/cluster-dns-operator@sha256:3d3a6c049da15f5ca176395b4329f81c355483f3b792ee7bd035ecbabf138e94
+  - name: cluster-machine-approver
+    image: registry.svc.ci.openshift.org/ipv6/cluster-machine-approver@sha256:778cf6b14ddc947aae3d52ed7f319e63618f5db1ce815e49916448ba413a372b
+  - name: aws-machine-controllers
 - name: 4.3.0-0.nightly-2019-12-20-152137-ipv6.1
   ocp_release: 4.3.0-0.nightly-2019-12-20-152137
   description: |
