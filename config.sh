@@ -93,7 +93,7 @@ INSTALLER_ARTIFACTS_DOCKERFILE=images/installer-artifacts/Dockerfile.rhel
 INSTALLER_BAREMETAL_STREAM=installer-baremetal
 INSTALLER_BAREMETAL_GIT_URI=https://github.com/openshift-kni/installer.git
 INSTALLER_BAREMETAL_GIT_REF=4.3-ipv6
-INSTALLER_BAREMETAL_DOCKERFILE=images/baremetal/Dockerfile.ci
+INSTALLER_BAREMETAL_DOCKERFILE=images/installer/Dockerfile.ci
 
 # machine-config-operator build config
 MCO_STREAM=machine-config-operator
@@ -133,3 +133,10 @@ CDO_STREAM=cluster-dns-operator
 CDO_GIT_URI=https://github.com/openshift-kni/cluster-dns-operator.git
 CDO_GIT_REF=4.3-ipv6
 CDO_DOCKERFILE=Dockerfile
+
+# cluster-ingress-operator build config
+CIO_STREAM=cluster-ingress-operator
+CIO_GIT_URI=https://github.com/openshift-kni/cluster-ingress-operator.git
+CIO_GIT_REF=4.3-ipv6
+CIO_DOCKERFILE=Dockerfile
+
