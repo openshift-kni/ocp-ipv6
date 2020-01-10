@@ -1,4 +1,4 @@
-- name: 4.3.0-0.nightly-2020-01-09-234847-ipv6.1
+- name: 4.3.0-0.nightly-2020-01-09-234847-ipv6.2
   ocp_release: 4.3.0-0.nightly-2020-01-09-234847
   description: |
           updating to latest accepted nightly from the 9th
