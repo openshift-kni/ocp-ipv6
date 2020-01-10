@@ -95,6 +95,12 @@ INSTALLER_BAREMETAL_GIT_URI=https://github.com/openshift-kni/installer.git
 INSTALLER_BAREMETAL_GIT_REF=4.3-ipv6
 INSTALLER_BAREMETAL_DOCKERFILE=images/baremetal/Dockerfile.ci
 
+# ironic-image build_config
+IRONIC_IMAGE_STREAM=ironic-image
+IRONIC_IMAGE_GIT_URI=https://github.com/openshift-kni/ironic-image.git
+IRONIC_IMAGE_GIT_REF=4.3-ipv6
+IRONIC_IMAGE_DOCKERFILE=Dockerfile
+
 # machine-config-operator build config
 MCO_STREAM=machine-config-operator
 MCO_GIT_URI=https://github.com/openshift-kni/machine-config-operator.git
