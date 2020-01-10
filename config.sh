@@ -93,7 +93,7 @@ INSTALLER_ARTIFACTS_DOCKERFILE=images/installer-artifacts/Dockerfile.rhel
 INSTALLER_BAREMETAL_STREAM=baremetal-installer
 INSTALLER_BAREMETAL_GIT_URI=https://github.com/openshift-kni/installer.git
 INSTALLER_BAREMETAL_GIT_REF=4.3-ipv6
-INSTALLER_BAREMETAL_DOCKERFILE=images/installer/Dockerfile.ci
+INSTALLER_BAREMETAL_DOCKERFILE=images/baremetal/Dockerfile.ci
 
 # machine-config-operator build config
 MCO_STREAM=machine-config-operator
