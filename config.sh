@@ -29,12 +29,6 @@ CMO_GIT_URI=https://github.com/openshift-kni/cluster-monitoring-operator.git
 CMO_GIT_REF=4.3-ipv6
 CMO_DOCKERFILE=Dockerfile
 
-# cluster-network-operator build config
-CNO_STREAM=cluster-network-operator
-CNO_GIT_URI=https://github.com/openshift-kni/cluster-network-operator.git
-CNO_GIT_REF=4.3-ipv6
-CNO_DOCKERFILE=Dockerfile
-
 # console-operator build config
 CONSOLE_OPERATOR_STREAM=console-operator
 CONSOLE_OPERATOR_GIT_URI=https://github.com/openshift-kni/console-operator.git
