@@ -39,4 +39,4 @@ ENTRYPOINT ["/noentry"]
 EOF
 )
 
-build_image_from_dockerfile "machine-os-content" $MOC_VERSION $MOC_STREAM "$DOCKERFILE"
+build_image_from_dockerfile "$MOC_STREAM" $MOC_VERSION $MOC_STREAM "$DOCKERFILE"
