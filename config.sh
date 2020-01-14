@@ -146,3 +146,8 @@ CIO_GIT_URI=https://github.com/openshift-kni/cluster-ingress-operator.git
 CIO_GIT_REF=4.3-ipv6
 CIO_DOCKERFILE=Dockerfile
 
+# installer-baremetal build_config
+BAREMETAL_RUNTIMECFG_STREAM=baremetal-installer
+BAREMETAL_RUNTIMECFG_GIT_URI=https://github.com/openshift-kni/installer.git
+BAREMETAL_RUNTIMECFG_GIT_REF=4.3-ipv6
+BAREMETAL_RUNTIMECFG_DOCKERFILE=Dockerfile
