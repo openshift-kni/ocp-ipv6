@@ -97,3 +97,8 @@ BAREMETAL_RUNTIMECFG_STREAM=baremetal-runtimecfg
 BAREMETAL_RUNTIMECFG_GIT_URI=https://github.com/openshift-kni/baremetal-runtimecfg.git
 BAREMETAL_RUNTIMECFG_GIT_REF=4.3-ipv6
 BAREMETAL_RUNTIMECFG_DOCKERFILE=Dockerfile
+
+COREDNS_STREAM=coredns
+COREDNS_GIT_URI=https://github.com/openshift-kni/coredns.git
+COREDNS_GIT_REF=4.3-ipv6
+COREDNS_DOCKERFILE=Dockerfile.openshift
