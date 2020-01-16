@@ -19,7 +19,7 @@ function wait_for_build() {
     name="$1"; shift
 
     BUILD_POD=$(oc --config "${IPV6_KUBECONFIG}" get build "${name}" -o json | jq -r '.metadata.annotations["openshift.io/build.pod-name"]')
-    oc --config "${IPV6_KUBECONFIG}" wait --for condition=Ready pod "${BUILD_POD}" --timeout=240s
+    oc --config "${IPV6_KUBECONFIG}" wait --for condition=Ready pod "${BUILD_POD}" --timeout=540s
     oc --config "${IPV6_KUBECONFIG}" logs -f "${BUILD_POD}"
 
     BUILD_PHASE=$(oc --config "${IPV6_KUBECONFIG}" get build "${name}" -o json | jq -r .status.phase)
