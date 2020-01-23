@@ -23,11 +23,23 @@ CIRO_GIT_URI=https://github.com/openshift-kni/cluster-image-registry-operator.gi
 CIRO_GIT_REF=4.3-ipv6
 CIRO_DOCKERFILE=Dockerfile
 
+# cluster-kube-apiserver-operator build config
+CKAO_STREAM=cluster-kube-apiserver-operator
+CKAO_GIT_URI=https://github.com/openshift-kni/cluster-kube-apiserver-operator.git
+CKAO_GIT_REF=4.3-ipv6
+CKAO_DOCKERFILE=Dockerfile.rhel7
+
 # cluster-monitoring-operator build config
 CMO_STREAM=cluster-monitoring-operator
 CMO_GIT_URI=https://github.com/openshift-kni/cluster-monitoring-operator.git
 CMO_GIT_REF=4.3-ipv6
 CMO_DOCKERFILE=Dockerfile
+
+# cluster-openshift-apiserver-operator build config
+COAO_STREAM=cluster-openshift-apiserver-operator
+COAO_GIT_URI=https://github.com/openshift-kni/cluster-openshift-apiserver-operator.git
+COAO_GIT_REF=4.3-ipv6
+COAO_DOCKERFILE=Dockerfile
 
 # console-operator build config
 CONSOLE_OPERATOR_STREAM=console-operator
