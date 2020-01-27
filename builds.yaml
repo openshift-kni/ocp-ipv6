@@ -1,3 +1,38 @@
+- name: 4.3.0-0.nightly-2020-01-21-205041-ipv6.6
+  ocp_release: 4.3.0-0.nightly-2020-01-21-205041
+  description: |
+    refresh cluster-kube-apiserver-operator to include patch
+    refresh cluster-openshift-apiserver-operator to include updated patch
+  images:
+  - name: cluster-kube-apiserver-operator
+    image: registry.svc.ci.openshift.org/ipv6/cluster-kube-apiserver-operator@sha256:56b2366bec27021531ef0faba2b3287b191a0684d1769a8ba21026480d599fc1
+  - name: cluster-openshift-apiserver-operator
+    image: registry.svc.ci.openshift.org/ipv6/cluster-openshift-apiserver-operator@sha256:6437e917a42621db77e45f1ee87850211127aa3d576708eb0f6b083c2fbfea34
+  - name: cluster-ingress-operator
+    image: registry.svc.ci.openshift.org/ipv6/cluster-ingress-operator@sha256:1bc2f3be8376d727f24f6c7af4e881f0362a749557562fbdeabaeab7a230b3b7
+  - name: cluster-network-operator
+    image: registry.svc.ci.openshift.org/ipv6/cluster-network-operator@sha256:94eba0fc3ae6e8abc4fc22bf30478acab6f9841ee99a686069758bd55250e8d3
+  - name: console-operator
+    image: registry.svc.ci.openshift.org/ipv6/console-operator@sha256:d44d1124a8bebb676ddd333553a5e0be776938024516e4dadab4b76992509d41
+  - name: coredns
+    image: registry.svc.ci.openshift.org/ipv6/coredns@sha256:c3bfeea7b49b0b98a5ad6b68747b044299dbb717e7241f4106aa31bee0608db3
+  - name: hyperkube
+    image: registry.svc.ci.openshift.org/ipv6/hyperkube@sha256:6a6ffa8a2197d25618f143959f89e630b5480c40a801891e3d98921de6f5faf6
+  - name: installer
+    image: registry.svc.ci.openshift.org/ipv6/installer@sha256:2e7c0b4d83f43549758ca2326626e957135c8fac49af8139dd09cfc7661875f1
+  - name: installer-artifacts
+    image: registry.svc.ci.openshift.org/ipv6/installer-artifacts@sha256:862e5131821e7bbf99b68973048ecc3ca68e4b16a5e7ed8c5f44155552d95d47
+  - name: baremetal-installer
+    image: registry.svc.ci.openshift.org/ipv6/baremetal-installer@sha256:c175c3de239f1d95da3d3a20debb466d3d4fceaf7591f661be382a329a9d1eb3
+  - name: machine-config-operator
+    image: registry.svc.ci.openshift.org/ipv6/machine-config-operator@sha256:e4119ca6522c0c2983fdc6f279f6256a02dc4e67ca7fa8033482456b4d84be21
+  - name: machine-os-content
+    image: registry.svc.ci.openshift.org/ipv6/machine-os-content@sha256:d513ac541d70d5b51582bbe4a22419c428a66ed744c1392f952f0e3da6cdb1b2
+  - name: openshift-controller-manager
+    image: registry.svc.ci.openshift.org/ipv6/openshift-controller-manager@sha256:adeed640012d1c0cca0bfbc1fb26beee21f3d0c09552a5c438e00148805a7d9e
+  - name: ovn-kubernetes
+    image: registry.svc.ci.openshift.org/ipv6/ovn-kubernetes@sha256:8e817a03c29c26e2820d6c528097d1db42656b1c852c4510938848f5abb44d76
+
 - name: 4.3.0-0.nightly-2020-01-21-205041-ipv6.5d1
   ocp_release: 4.3.0-0.nightly-2020-01-21-205041
   description: |
