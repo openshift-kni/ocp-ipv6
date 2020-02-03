@@ -114,3 +114,8 @@ COREDNS_STREAM=coredns
 COREDNS_GIT_URI=https://github.com/openshift-kni/coredns.git
 COREDNS_GIT_REF=4.3-ipv6
 COREDNS_DOCKERFILE=Dockerfile.openshift
+
+OAUTHPROXY_STREAM=oauth-proxy
+OAUTHPROXY_GIT_URI=https://github.com/openshift-kni/oauth-proxy.git
+OAUTHPROXY_GIT_REF=4.3-ipv6
+OAUTHPROXY_DOCKERFILE=Dockerfile
