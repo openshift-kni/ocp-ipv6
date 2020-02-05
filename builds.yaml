@@ -1,3 +1,45 @@
+- name: 4.3.0-0.nightly-2020-02-05-064223-ipv6.1
+  ocp_release: 4.3.0-0.nightly-2020-02-05-064223
+  description: |
+      cluster-ingress-operator upstream merged - now should be same as upstream
+      cluster-kube-apiserver-operator upstream merged should now be same as upstream
+      cluster-openshift-apiserver-operator upstream merged should now be same as upstream
+      console-operator upstream merged should now be same as upstream
+      openshift-controller-manager upstream merged should now be same as upstream
+      update to nightly from the 5th
+  images:
+  - name: cluster-network-operator
+    image: registry.svc.ci.openshift.org/ipv6/cluster-network-operator@sha256:94eba0fc3ae6e8abc4fc22bf30478acab6f9841ee99a686069758bd55250e8d3
+  - name: coredns
+    image: registry.svc.ci.openshift.org/ipv6/coredns@sha256:c3bfeea7b49b0b98a5ad6b68747b044299dbb717e7241f4106aa31bee0608db3
+  - name: hyperkube
+    image: registry.svc.ci.openshift.org/ipv6/hyperkube@sha256:6a6ffa8a2197d25618f143959f89e630b5480c40a801891e3d98921de6f5faf6
+  - name: installer
+    image: registry.svc.ci.openshift.org/ipv6/installer@sha256:2e7c0b4d83f43549758ca2326626e957135c8fac49af8139dd09cfc7661875f1
+  - name: installer-artifacts
+    image: registry.svc.ci.openshift.org/ipv6/installer-artifacts@sha256:862e5131821e7bbf99b68973048ecc3ca68e4b16a5e7ed8c5f44155552d95d47
+  - name: baremetal-installer
+    image: registry.svc.ci.openshift.org/ipv6/baremetal-installer@sha256:c175c3de239f1d95da3d3a20debb466d3d4fceaf7591f661be382a329a9d1eb3
+  - name: machine-config-operator
+    image: registry.svc.ci.openshift.org/ipv6/machine-config-operator@sha256:1a11dee3a485286ccbddc31b20de366e29f811a951501522da3bcccbfa7f60e9
+  - name: machine-os-content
+    image: registry.svc.ci.openshift.org/ipv6/machine-os-content@sha256:d513ac541d70d5b51582bbe4a22419c428a66ed744c1392f952f0e3da6cdb1b2
+  - name: oauth-proxy
+    image: registry.svc.ci.openshift.org/ipv6/oauth-proxy@sha256:7a8d8edd6fbab74567a9c1324e2346a0a3086dbdc2da95442a735079d22a0b82
+  - name: ovn-kubernetes
+    image: registry.svc.ci.openshift.org/ipv6/ovn-kubernetes@sha256:a966ba876a88ce098c314bff9c6f4c99efca5d8a2d754f4450ebc07fe26ac0cf
+  #same
+  - name: cluster-ingress-operator
+    image: registry.svc.ci.openshift.org/ipv6/cluster-ingress-operator@sha256:fd10675a002f78fe28e285e922eb70175a7c57486d0bbfe68f6f3c9edbf00faf
+  - name: cluster-kube-apiserver-operator
+    image: registry.svc.ci.openshift.org/ipv6/cluster-kube-apiserver-operator@sha256:0b366fbebdde3f2b18f6bc7efcc72296ea763c9871f6251d8c0bec00f9880e86
+  - name: cluster-openshift-apiserver-operator
+    image: registry.svc.ci.openshift.org/ipv6/cluster-openshift-apiserver-operator@sha256:a55b11c053deda70d521ef66f5fc68b9996a50fd6e49599e26814994848f31f8
+  - name: console-operator
+    image: registry.svc.ci.openshift.org/ipv6/console-operator@sha256:f41f0aad5a5c02a5675391c37bd95805e5c8ae039dc19d02e32fabc3b6e53bf4
+  - name: openshift-controller-manager
+    image: registry.svc.ci.openshift.org/ipv6/openshift-controller-manager@sha256:99db12253d5d4c086e6d66de9ebb330ee4784e88e6a4c51eb5d4311100d091d3
+
 - name: 4.3.0-0.nightly-2020-02-03-115336-ipv6.2
   ocp_release: 4.3.0-0.nightly-2020-02-03-115336
   description: |
