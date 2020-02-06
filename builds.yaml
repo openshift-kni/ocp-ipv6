@@ -1,3 +1,30 @@
+- name: 4.3.0-0.nightly-2020-02-06-120247-ipv6.3-mco-test
+  ocp_release: 4.3.0-0.nightly-2020-02-06-120247
+  description: |
+      machine-config-operator - Set Kubelet node IP to non-vip
+      only test this if you specifically want to test a candidate patch to resolve kubelet using VIPs
+  images:
+  - name: cluster-network-operator
+    image: registry.svc.ci.openshift.org/ipv6/cluster-network-operator@sha256:94eba0fc3ae6e8abc4fc22bf30478acab6f9841ee99a686069758bd55250e8d3
+  - name: coredns
+    image: registry.svc.ci.openshift.org/ipv6/coredns@sha256:c3bfeea7b49b0b98a5ad6b68747b044299dbb717e7241f4106aa31bee0608db3
+  - name: hyperkube
+    image: registry.svc.ci.openshift.org/ipv6/hyperkube@sha256:6a6ffa8a2197d25618f143959f89e630b5480c40a801891e3d98921de6f5faf6
+  - name: installer
+    image: registry.svc.ci.openshift.org/ipv6/installer@sha256:b730d6d93fba2ff8f9bc0f45a82cbb94cb28107b6220304153fb1fc577488b28
+  - name: installer-artifacts
+    image: registry.svc.ci.openshift.org/ipv6/installer-artifacts@sha256:9030c8e5d0cacc194ceaa99fe892ac35c7ecd7d05cea4c35837ce2115cfc8166
+  - name: baremetal-installer
+    image: registry.svc.ci.openshift.org/ipv6/baremetal-installer@sha256:15692891f2d3b7f749b9a594f8cb0f94b621e31b33a8b0718c8b6f36d33e40ff
+  - name: machine-config-operator
+    image: registry.svc.ci.openshift.org/ipv6/machine-config-operator@sha256:ff54f3e04a15fa9b4a5a8b50b6a615897f85a31040183090e5d9bc6ae96bb236
+  - name: machine-os-content
+    image: registry.svc.ci.openshift.org/ipv6/machine-os-content@sha256:d513ac541d70d5b51582bbe4a22419c428a66ed744c1392f952f0e3da6cdb1b2
+  - name: oauth-proxy
+    image: registry.svc.ci.openshift.org/ipv6/oauth-proxy@sha256:7a8d8edd6fbab74567a9c1324e2346a0a3086dbdc2da95442a735079d22a0b82
+  - name: ovn-kubernetes
+    image: registry.svc.ci.openshift.org/ipv6/ovn-kubernetes@sha256:a966ba876a88ce098c314bff9c6f4c99efca5d8a2d754f4450ebc07fe26ac0cf
+
 - name: 4.3.0-0.nightly-2020-02-06-120247-ipv6.3
   ocp_release: 4.3.0-0.nightly-2020-02-06-120247
   description: |
