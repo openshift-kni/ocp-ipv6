@@ -1,4 +1,4 @@
-- name: 4.3.0-0.nightly-2020-02-06-120247-ipv6.4
+- name: 4.3.0-0.nightly-2020-02-06-120247-ipv6.5
   ocp_release: 4.3.0-0.nightly-2020-02-06-120247
   description: |
       machine-config-operator - Set Kubelet node IP to non-vip
