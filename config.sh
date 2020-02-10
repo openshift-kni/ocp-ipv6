@@ -119,3 +119,8 @@ OAUTHPROXY_STREAM=oauth-proxy
 OAUTHPROXY_GIT_URI=https://github.com/openshift-kni/oauth-proxy.git
 OAUTHPROXY_GIT_REF=4.3-ipv6
 OAUTHPROXY_DOCKERFILE=Dockerfile
+
+IPA_DOWNLOADER_STREAM=ironic-ipa-downloader
+IPA_DOWNLOADER_GIT_URI=https://github.com/openshift-kni/ironic-ipa-downloader.git
+IPA_DOWNLOADER_GIT_REF=4.3-ipv6
+IPA_DOWNLOADER_DOCKERFILE=Dockerfile.ocp
