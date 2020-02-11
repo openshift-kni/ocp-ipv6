@@ -1,3 +1,4 @@
+# AWS users should use 4.3.0-0.nightly-2020-02-06-120247-ipv6.6 as most recent release dropped AWS patches
 - name: 4.3.0-0.nightly-2020-02-10-055634-ipv6.3
   ocp_release: 4.3.0-0.nightly-2020-02-10-055634
   description: |
