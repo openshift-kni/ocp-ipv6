@@ -2,6 +2,7 @@
   ocp_release: 4.3.0-0.nightly-2020-02-10-055634
   description: |
       update machine-config-operator - lease renewal fix
+      NOTE - dropped aws support patches from machine-os-content
   images:
   - name: cluster-kube-apiserver-operator
     image: registry.svc.ci.openshift.org/ipv6/cluster-kube-apiserver-operator@sha256:0f0c381983839df1a2a44bbac8ec88f9b810e13a7396ebdde1cc30dfc45df4f4
@@ -27,6 +28,7 @@
   description: |
       update to nightly release from the 10th
       drop machine-os-content and hyperkube override images as changes are in upstream 4.3 branch
+      NOTE - dropped aws support patches from machine-os-content
   images:
   - name: cluster-kube-apiserver-operator
     image: registry.svc.ci.openshift.org/ipv6/cluster-kube-apiserver-operator@sha256:0f0c381983839df1a2a44bbac8ec88f9b810e13a7396ebdde1cc30dfc45df4f4
