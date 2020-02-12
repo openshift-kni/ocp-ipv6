@@ -19,10 +19,11 @@
     image: registry.svc.ci.openshift.org/ipv6/baremetal-installer@sha256:15692891f2d3b7f749b9a594f8cb0f94b621e31b33a8b0718c8b6f36d33e40ff
   - name: machine-config-operator
     image: registry.svc.ci.openshift.org/ipv6/machine-config-operator@sha256:38e15cd54a786a368ff3e5d03c6282cf1e0a4a10e59c0008e589cb66a7473ff0
-  - name: oauth-proxy
-    image: registry.svc.ci.openshift.org/ipv6/oauth-proxy@sha256:7a8d8edd6fbab74567a9c1324e2346a0a3086dbdc2da95442a735079d22a0b82
   - name: ovn-kubernetes
     image: registry.svc.ci.openshift.org/ipv6/ovn-kubernetes@sha256:a966ba876a88ce098c314bff9c6f4c99efca5d8a2d754f4450ebc07fe26ac0cf
+  # same as upstream now
+  - name: oauth-proxy
+    image: registry.svc.ci.openshift.org/ipv6/oauth-proxy@sha256:7a8d8edd6fbab74567a9c1324e2346a0a3086dbdc2da95442a735079d22a0b82
 
 - name: 4.3.0-0.nightly-2020-02-10-055634-ipv6.2
   ocp_release: 4.3.0-0.nightly-2020-02-10-055634
