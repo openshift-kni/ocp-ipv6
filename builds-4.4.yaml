@@ -1,0 +1,16 @@
+- name: 4.4.0-0.nightly-2020-02-17-103442-ipv6.2
+  ocp_release: 4.4.0-0.nightly-2020-02-17-103442
+  description: |
+    4.4 nightly
+    CNO debug hack
+    ovn-kubernetes master
+    ovn-kubernetes 1044 configmap override fix
+    ovn-kubernetes 1060 GatewayReady
+    ovn-kubernetes IPv6 HACK
+    ovn-kubernetes ipv6_prefix fix
+    beta ovn212 packages
+  images:
+  - name: ovn-kubernetes
+    image: registry.svc.ci.openshift.org/ipv6/ovn-kubernetes@sha256:b098d387bc059275546ba0765993b17779890e2faa2aa442f4d0b7459a56a2d8
+  - name: cluster-network-operator
+    image: registry.svc.ci.openshift.org/ipv6/cluster-network-operator@sha256:08b0d371af0d09135d77d86f8468d74473094ed4bfd8799d0924ebc46c2ac096

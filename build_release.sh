@@ -15,9 +15,9 @@ if [ -z "${BUILD_NAME}" ]; then
     exit 1
 fi
 
-BUILD_JSON=$(yq '.[] | select(.name == "'"${BUILD_NAME}"'")' builds.yaml || true)
+BUILD_JSON=$(cat builds.yaml builds-4.4.yaml | yq '.[] | select(.name == "'"${BUILD_NAME}"'")' || true)
 if [ -z "${BUILD_JSON}" ]; then
-    echo "Failed to find build ${BUILD_NAME} in builds.yaml" >&2
+    echo "Failed to find build ${BUILD_NAME} in builds.yaml or builds-4.4.yaml" >&2
     exit 1
 fi
 
