@@ -5,6 +5,9 @@
 # A namespace where builds will be executed
 IPV6_NAMESPACE=ipv6
 
+# The image stream (under the ocp namespace) where our 'base' image is tagged
+IPV6_BASE=4.3
+
 # Image stream where the release will be published to
 IPV6_RELEASE_STREAM=release
 

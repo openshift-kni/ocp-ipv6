@@ -57,6 +57,10 @@ spec:
     dockerStrategy:
       imageOptimizationPolicy: SkipLayers
       dockerfilePath: ${dockerfile}
+      from:
+        kind: ImageStreamTag
+        namespace: ocp
+        name: ${IPV6_BASE}:base
   output:
     to:
       kind: ImageStreamTag
