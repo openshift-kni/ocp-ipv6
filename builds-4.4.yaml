@@ -3,12 +3,13 @@
   description: |
     4.4 nightly
     CNO debug hack
-    ovn-kubernetes master
-    ovn-kubernetes 1044 configmap override fix
-    ovn-kubernetes 1060 GatewayReady
-    ovn-kubernetes IPv6 HACK
-    ovn-kubernetes ipv6_prefix fixes
-    beta ovn212 packages
+    openshift/ovn-kubernetes master
+    https://github.com/ovn-org/ovn-kubernetes/pull/1044 configmap override fix
+    https://github.com/ovn-org/ovn-kubernetes/pull/1060 GatewayReady fix
+    https://github.com/openshift/ovn-kubernetes/pull/92 hybrid exclude_ips fix
+    https://github.com/openshift-kni/ovn-kubernetes/commit/06838c60 ipv4 interface hack
+    https://github.com/openshift-kni/ovn-kubernetes/commit/ceb9d5ae ipv6_prefix fixes
+    https://github.com/openshift-kni/ovn-kubernetes/commit/99303a0c beta ovn212 packages
   images:
   - name: ovn-kubernetes
     image: registry.svc.ci.openshift.org/ipv6/ovn-kubernetes@sha256:4773cb8708e49e2ac765b216c98fddc21afb6a223bb7f3e3422ae9d704ac466b
