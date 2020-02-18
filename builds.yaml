@@ -2,6 +2,26 @@
 # AWS users should use 4.3.0-0.nightly-2020-02-06-120247-ipv6.6.  Releases after that dropped AWS support.
 #
 
+- name: 4.3.0-0.nightly-2020-02-17-110952-ipv6.1-cnotest
+  ocp_release: 4.3.0-0.nightly-2020-02-17-110952
+  description: |
+      Test dropping custom cluster-network-operator
+  images:
+  - name: cluster-kube-apiserver-operator
+    image: registry.svc.ci.openshift.org/ipv6/cluster-kube-apiserver-operator@sha256:c2d4f73a644d1a7dce0bd716ea616b635f59b73a846acc0349476d2a7394cc01
+  - name: coredns
+    image: registry.svc.ci.openshift.org/ipv6/coredns@sha256:cf64f2e53d9f9307e486ca93034e3f24c103ef105239c2aab962833ec6c80af3
+  - name: installer
+    image: registry.svc.ci.openshift.org/ipv6/installer@sha256:3eab72a27693d02fa32409a4f832b9f7918e3c7ede700d5997689d30b19d31c0
+  - name: installer-artifacts
+    image: registry.svc.ci.openshift.org/ipv6/installer-artifacts@sha256:7706bb4fb1a0889c7f95789eec4ea09926b7fc02ba1dfaf3e31de91f93ae95bd
+  - name: baremetal-installer
+    image: registry.svc.ci.openshift.org/ipv6/baremetal-installer@sha256:1fe7b91fee056053751248c19204d6d3bee24a98d97cec5e4c4ca6c09497dc02
+  - name: machine-config-operator
+    image: registry.svc.ci.openshift.org/ipv6/machine-config-operator@sha256:122c3b2c8c088b727bb73cdb9c6348cfc54a79a10a84a9ac6280d703db6a0ce6
+  - name: ovn-kubernetes
+    image: registry.svc.ci.openshift.org/ipv6/ovn-kubernetes@sha256:c6d62342b054311d78c9bc2cba7c7e44d94921682b049f12242a1e632d4941a6
+
 - name: 4.3.0-0.nightly-2020-02-17-110952-ipv6.1
   ocp_release: 4.3.0-0.nightly-2020-02-17-110952
   description: |
