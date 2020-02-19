@@ -1,3 +1,23 @@
+- name: 4.4.0-0.nightly-2020-02-19-123359-ipv6.1
+  ocp_release: 4.4.0-0.nightly-2020-02-19-123359
+  description: |
+    4.4 nightly
+    working cluster-etcd-operator?
+    CNO debug hack
+    CNO raft hacks from 4.3-ipv6
+    openshift/ovn-kubernetes master
+    https://github.com/ovn-org/ovn-kubernetes/pull/1044 configmap override fix
+    https://github.com/ovn-org/ovn-kubernetes/pull/1060 GatewayReady fix
+    https://github.com/openshift/ovn-kubernetes/pull/92 hybrid exclude_ips fix
+    https://github.com/openshift-kni/ovn-kubernetes/commit/06838c60 ipv4 interface hack
+    https://github.com/openshift-kni/ovn-kubernetes/commit/ceb9d5ae ipv6_prefix fixes
+    https://github.com/openshift-kni/ovn-kubernetes/commit/99303a0c beta ovn212 packages
+  images:
+  - name: ovn-kubernetes
+    image: registry.svc.ci.openshift.org/ipv6/ovn-kubernetes@sha256:4773cb8708e49e2ac765b216c98fddc21afb6a223bb7f3e3422ae9d704ac466b
+  - name: cluster-network-operator
+    image: registry.svc.ci.openshift.org/ipv6/cluster-network-operator@sha256:306255d4698077671187eb916513dde09704d86de62fd2a376e57c3689ec8df1
+
 - name: 4.4.0-0.nightly-2020-02-17-103442-ipv6.3
   ocp_release: 4.4.0-0.nightly-2020-02-17-103442
   description: |
