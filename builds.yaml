@@ -6,6 +6,7 @@
   ocp_release: 4.3.0-0.nightly-2020-02-17-205936
   description: |
       Update cluster-network-operator with latest from https://github.com/openshift/cluster-network-operator/pull/483
+      note - CNO breaks ovn-kubernetes in this release
   images:
   - name: cluster-kube-apiserver-operator
     image: registry.svc.ci.openshift.org/ipv6/cluster-kube-apiserver-operator@sha256:dca20ca23f5286429212cde53f881115c0092dd82be7352a9e95fefc53937058
@@ -28,6 +29,7 @@
   ocp_release: 4.3.0-0.nightly-2020-02-17-205936
   description: |
       Re-add cluster-network-operator with https://github.com/openshift/cluster-network-operator/pull/483
+      note - CNO is broken in this release
   images:
   - name: cluster-kube-apiserver-operator
     image: registry.svc.ci.openshift.org/ipv6/cluster-kube-apiserver-operator@sha256:dca20ca23f5286429212cde53f881115c0092dd82be7352a9e95fefc53937058
