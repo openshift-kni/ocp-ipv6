@@ -7,6 +7,7 @@
   description: |
       New ovn-kubernetes with all changes from upstream + ipv4 hack, latest OVN scratch build, no custom OVS
       Note - possibly unstable, recommend 4.3.0-0.nightly-2020-02-17-205936-ipv6.1 for now
+      Hitting this bug with OVS+OVN - https://bugzilla.redhat.com/show_bug.cgi?id=1805438
   images:
   - name: cluster-kube-apiserver-operator
     image: registry.svc.ci.openshift.org/ipv6/cluster-kube-apiserver-operator@sha256:dca20ca23f5286429212cde53f881115c0092dd82be7352a9e95fefc53937058
