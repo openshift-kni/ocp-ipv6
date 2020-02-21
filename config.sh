@@ -135,7 +135,7 @@ IPA_DOWNLOADER_GIT_REF=4.3-ipv6
 IPA_DOWNLOADER_DOCKERFILE=Dockerfile.ocp
 
 # cluster-api-provider-azure build config
-CAPA_STREAM=cluster-api-provider-azure
+CAPA_STREAM=azure-machine-controllers
 CAPA_GIT_URI=https://github.com/openshift-kni/cluster-api-provider-azure.git
 CAPA_GIT_REF=4.3-ipv6
 CAPA_DOCKERFILE=Dockerfile
