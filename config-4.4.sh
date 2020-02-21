@@ -51,7 +51,7 @@ INSTALLER_ARTIFACTS_GIT_REF=4.4-ipv6
 INSTALLER_ARTIFACTS_DOCKERFILE=images/installer-artifacts/Dockerfile.rhel
 
 # cluster-api-provider-azure build config
-CAPA_STREAM=cluster-api-provider-azure
+CAPA_STREAM=azure-machine-controllers
 CAPA_GIT_URI=https://github.com/openshift-kni/cluster-api-provider-azure.git
 CAPA_GIT_REF=4.4-ipv6
 CAPA_DOCKERFILE=Dockerfile
