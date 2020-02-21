@@ -31,3 +31,27 @@ OVNKUBE_STREAM=ovn-kubernetes
 OVNKUBE_GIT_URI=https://github.com/openshift-kni/ovn-kubernetes.git
 OVNKUBE_GIT_REF=4.4-ipv6
 OVNKUBE_DOCKERFILE=Dockerfile
+
+# cluster-etcd-operator build config
+CEO_STREAM=cluster-etcd-operator
+CEO_GIT_URI=https://github.com/openshift-kni/cluster-etcd-operator.git
+CEO_GIT_REF=4.4-ipv6
+CEO_DOCKERFILE=Dockerfile.rhel7
+
+# installer build_config
+INSTALLER_STREAM=installer
+INSTALLER_GIT_URI=https://github.com/openshift-kni/installer.git
+INSTALLER_GIT_REF=4.4-ipv6
+INSTALLER_DOCKERFILE=images/installer/Dockerfile.ci
+
+# installer-artifacts build_config
+INSTALLER_ARTIFACTS_STREAM=installer-artifacts
+INSTALLER_ARTIFACTS_GIT_URI=https://github.com/openshift-kni/installer.git
+INSTALLER_ARTIFACTS_GIT_REF=4.4-ipv6
+INSTALLER_ARTIFACTS_DOCKERFILE=images/installer-artifacts/Dockerfile.rhel
+
+# cluster-api-provider-azure build config
+CAPA_STREAM=cluster-api-provider-azure
+CAPA_GIT_URI=https://github.com/openshift-kni/cluster-api-provider-azure.git
+CAPA_GIT_REF=4.4-ipv6
+CAPA_DOCKERFILE=Dockerfile
