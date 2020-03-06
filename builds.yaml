@@ -2,16 +2,19 @@
 # AWS users should use 4.3.0-0.nightly-2020-02-06-120247-ipv6.6.  Releases after that dropped AWS support.
 #
 
-- name: 4.3.0-0.nightly-2020-03-06-102925-ipv6.1
+- name: 4.3.0-0.nightly-2020-03-06-102925-ipv6.2
   ocp_release: 4.3.0-0.nightly-2020-03-06-102925
   description: |
       ovn-kubernetes with Azure LB fix openshift/ovn-kubernetes#114
       azure-machine-controllers with cluster-api-provider-azure#108
+      machine-config-operator with "--node-ip ::" fix, machine-config-operator#1538
   images:
   - name: ovn-kubernetes
     image: registry.svc.ci.openshift.org/ipv6/ovn-kubernetes@sha256:2cd1cdba059501878cfa7baaf25dcf357ae88659790e442543eb475efb7d8d44
   - name: azure-machine-controllers
     image: registry.svc.ci.openshift.org/ipv6/azure-machine-controllers@sha256:bbd56bd9abee8c88d482bf9816016a1cf1304cb62c3cf9fa6038c3b0250074a9
+  - name: machine-config-operator
+    image: registry.svc.ci.openshift.org/ipv6/machine-config-operator@sha256:885ce11ce5ef17c816b02a6031391e9f87549e4b5559990fb279aa524e6c2d28
 
 - name: 4.3.0-0.nightly-2020-02-21-091838-ipv6.3
   ocp_release: 4.3.0-0.nightly-2020-02-21-091838
